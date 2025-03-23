@@ -1,7 +1,9 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-PHOTO_BOT_TOKEN = "8149033383:AAENTaj8J7GQq2bY_ceBl2j9L0eHS83859c"
+import os
+
+PHOTO_BOT_TOKEN = os.environ['PHOTO_BOT_TOKEN']
 DESTINATION_CHAT_ID = -4703516485  # Replace with your private group/channel ID
 TOPIC_ID = 506
 
